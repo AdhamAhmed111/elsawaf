@@ -224,7 +224,9 @@ export const OrderDrawer: React.FC<OrderDrawerProps> = ({
                 <span className="text-amber-400 font-mono text-base">{total} ج.م</span>
               </div>
             </div>
-
+                        <p className="text-[11px] leading-relaxed text-amber-200/90 bg-amber-500/10 border border-amber-500/30 rounded-lg px-3 py-2 text-center">
+              هذا موقع تجريبي من Zexen Agency، والطلب سيصل إلى فريقنا وليس إلى المطعم.
+            </p>
             <div className="grid grid-cols-2 gap-2 pt-1">
               <button
                 onClick={handleSendWhatsApp}
