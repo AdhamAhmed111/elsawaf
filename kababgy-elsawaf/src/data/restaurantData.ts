@@ -28,9 +28,9 @@ export interface ReviewItem {
 export const RESTAURANT_INFO = {
   name: 'كبابجي الصواف',
   brandSubtitle: 'Elsawaf Barbecue Restaurant',
-  phone: '01008359193',
-  phoneFormatted: '010 0835 9193',
-  whatsappNumber: '201008359193',
+  phone: '01098310321',
+  phoneFormatted: '010 9831 0321',
+  whatsappNumber: '201098310321',
   address: '5C95+QWV، السلام الغربية، قسم أول السلام، محافظة القاهرة 4644120',
   shortLocation: 'السلام الغربية - القاهرة',
   openingHours: 'يومياً من 12:00 ظهراً حتى 4:00 فجراً',
