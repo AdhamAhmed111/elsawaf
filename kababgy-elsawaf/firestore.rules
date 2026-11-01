@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // The only accounts allowed to edit the site. Add the owner's Google email here too if needed.
+    function isAdmin() {
+      return request.auth != null &&
+             request.auth.token.email_verified == true &&
+             request.auth.token.email in ['adhamahmedn60@gmail.com'];
+    }
+
+    // Menu items: everyone can read, only the owner can change.
+    match /sawaf_menu/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Offer / banner settings, reviews, menu meta.
+    match /sawaf_settings/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

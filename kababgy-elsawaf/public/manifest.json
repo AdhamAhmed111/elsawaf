@@ -1,0 +1,26 @@
+{
+  "name": "كبابجي الصواف - مشويات وكفتة على الفحم",
+  "short_name": "كبابجي الصواف",
+  "description": "صفحة الهبوط الرسمية لمطعم كبابجي الصواف - أفضل مشويات وكفتة بلدي في السلام، صالة وتيك أواي وتوصيل حتى 4:00 صباحاً. هاتف: 01008359193",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#b91c1c",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
